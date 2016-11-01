@@ -4,11 +4,10 @@ import example.TestableBean;
 import org.springframework.stereotype.Component;
 
 @Component
-public class Session implements TestableBean {
+public class DbClient implements TestableBean {
 
-    @Override
     public String getName() {
-        return "DB - Session";
+        return "DB - Client";
     }
 
     public boolean test(){

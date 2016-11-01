@@ -1,6 +1,6 @@
 package example;
 
+@FunctionalInterface
 public interface TestableBean {
-    String getName();
     boolean test();
 }

@@ -1,11 +1,11 @@
 package example.mq;
 
 import example.TestableBean;
+import org.springframework.stereotype.Component;
 
-
+@Component
 public class Publisher implements TestableBean {
 
-    @Override
     public String getName() {
         return "MQ - Publisher";
     }
