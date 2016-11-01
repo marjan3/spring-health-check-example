@@ -32,7 +32,7 @@ public class HealthCheckIntegrationTest {
     private TestRestTemplate testRestTemplate;
 
     @Test
-    public void shouldReturn200WhenSendingRequestToManagementEndpoint() throws Exception {
+    public void shouldReturn503WhenSendingRequestToHealthEndpoint() throws Exception {
         @SuppressWarnings("rawtypes")
         ResponseEntity<Map> entity = this.testRestTemplate.getForEntity(
                 "http://localhost:" + this.mgt + "/health", Map.class);
